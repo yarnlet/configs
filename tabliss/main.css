@@ -1,0 +1,97 @@
+/* 
+made by @yarnlet
+revision 1.0
+thanks to https://github.com/the-wright-jamie for the original GitHub Calendar fix
+thanks to https://hellogreg.github.io/woff2base/ for the WOFF to CSS tool
+*/
+
+@font-face { 
+  font-family: "Jellyka - le Grand Saut Textual";
+  font-weight: 100 900;
+  font-style: normal italic;
+  src: url("https://github.com/yarnlet/storage/raw/main/le_grand_saut_textual.woff2");
+}
+
+.GitHub {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sr-only {
+    display: none;
+}
+
+td:first-child {
+    display: none;
+}
+
+div.js-calendar-graph div:last-child {
+    display: none;
+}
+
+table.ContributionCalendar-grid thead {
+    display: none;
+}
+
+td.ContributionCalendar-day {
+   opacity: 1;
+}
+
+td.ContributionCalendar-day[data-level='0'] {
+    background-color: #E3E3E3;
+    opacity: 60%;
+}
+
+td.ContributionCalendar-day[data-level='0']:hover {
+    background-color: #E3E3E3;
+    opacity: 100%;
+}
+
+td.ContributionCalendar-day[data-level='1'] {
+    background-color: var(--color-calendar-graph-day-L1-bg);
+    opacity: 80%;
+}
+
+td.ContributionCalendar-day[data-level='1']:hover {
+    background-color: var(--color-calendar-graph-day-L1-bg);
+    opacity: 100%;
+}
+
+td.ContributionCalendar-day[data-level='2'] {
+    background-color: var(--color-calendar-graph-day-L2-bg);
+    opacity: 80%;
+}
+
+td.ContributionCalendar-day[data-level='2']:hover {
+    opacity: 100%;
+}
+
+td.ContributionCalendar-day[data-level='3'] {
+    background-color: var(--color-calendar-graph-day-L3-bg);
+    opacity: 80%;
+}
+
+td.ContributionCalendar-day[data-level='3']:hover {
+    opacity: 100%;
+}
+
+td.ContributionCalendar-day[data-level='4'] {
+    background-color: var(--color-calendar-graph-day-L4-bg);
+    opacity: 80%;
+}
+
+td.ContributionCalendar-day[data-level='4']:hover {
+    opacity: 100%;
+}
+
+.Time.Digital {
+    font-family: "Jellyka - le Grand Saut Textual";
+    font-size: 60px;
+}
+
+.Greeting {
+    font-family: "Jellyka - le Grand Saut Textual";
+    font-size: 50px;
+}
